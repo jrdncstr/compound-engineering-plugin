@@ -5,6 +5,12 @@ All notable changes to the compound-engineering plugin will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.15.0] - 2025-12-18
+
+### Added
+
+- **`/xcode-test` command** - Build and test iOS apps on simulator using XcodeBuildMCP. Discovers projects/schemes, builds for simulator, installs and launches apps, takes screenshots, captures console logs, and supports human verification for Sign in with Apple, push notifications, and in-app purchases. Checks for XcodeBuildMCP installation first.
+
 ## [2.14.0] - 2025-12-18
 
 ### Added
