@@ -5,6 +5,22 @@ All notable changes to the compound-engineering plugin will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.26.0] - 2026-01-14
+
+### Added
+
+- **`/lfg` command** - Full autonomous engineering workflow
+  - Orchestrates complete feature development from plan to PR
+  - Runs: plan → deepen-plan → work → review → resolve todos → test-browser → feature-video
+  - Uses ralph-loop for autonomous completion
+  - Migrated from local command, updated to use `/test-browser` instead of `/playwright-test`
+
+### Summary
+
+- 27 agents, 21 commands, 14 skills, 1 MCP server
+
+---
+
 ## [2.25.0] - 2026-01-14
 
 ### Added
