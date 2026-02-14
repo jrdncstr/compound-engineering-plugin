@@ -162,13 +162,13 @@ Reference the [yaml-schema.md](../../skills/compound-docs/references/yaml-schema
 - best_practice, documentation_gap
 
 **component values:**
-- rails_model, rails_controller, rails_view, service_object
-- background_job, database, frontend_stimulus, hotwire_turbo
+- data_model, api_handler, view_template, service_object
+- background_job, database, frontend_component, frontend_framework
 - email_processing, brief_system, assistant, authentication
 - payments, development_workflow, testing_framework, documentation, tooling
 
 **root_cause values:**
-- missing_association, missing_include, missing_index, wrong_api
+- missing_relation, missing_eager_load, missing_index, wrong_api
 - scope_issue, thread_violation, async_timing, memory_leak
 - config_error, logic_error, test_isolation, missing_validation
 - missing_permission, missing_workflow_step, inadequate_documentation
