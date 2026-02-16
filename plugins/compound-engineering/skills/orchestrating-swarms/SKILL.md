@@ -330,11 +330,11 @@ Task({
   prompt: "Analyze this code for performance bottlenecks"
 })
 
-// Rails code review
+// TypeScript code review
 Task({
-  subagent_type: "compound-engineering:review:kieran-rails-reviewer",
-  description: "Rails review",
-  prompt: "Review this Rails code for best practices"
+  subagent_type: "compound-engineering:review:kieran-typescript-reviewer",
+  description: "TypeScript review",
+  prompt: "Review this TypeScript code for best practices"
 })
 
 // Architecture review
@@ -359,10 +359,6 @@ Task({
 - `data-integrity-guardian` - Database and data safety
 - `data-migration-expert` - Migration validation
 - `deployment-verification-agent` - Pre-deploy checklists
-- `dhh-rails-reviewer` - DHH/37signals Rails style
-- `julik-frontend-races-reviewer` - JavaScript race conditions
-- `kieran-python-reviewer` - Python best practices
-- `kieran-rails-reviewer` - Rails best practices
 - `kieran-typescript-reviewer` - TypeScript best practices
 - `pattern-recognition-specialist` - Design patterns and anti-patterns
 - `performance-oracle` - Performance analysis
@@ -374,7 +370,7 @@ Task({
 Task({
   subagent_type: "compound-engineering:research:best-practices-researcher",
   description: "Research auth best practices",
-  prompt: "Research current best practices for JWT authentication in Rails 2024-2026"
+  prompt: "Research current best practices for JWT authentication in Node.js/Express 2024-2026"
 })
 
 // Framework documentation
@@ -398,15 +394,6 @@ Task({
 - `git-history-analyzer` - Code archaeology
 - `learnings-researcher` - Search docs/solutions/
 - `repo-research-analyst` - Repository patterns
-
-### Design Agents
-```javascript
-Task({
-  subagent_type: "compound-engineering:design:figma-design-sync",
-  description: "Sync with Figma",
-  prompt: "Compare implementation with Figma design at [URL]"
-})
-```
 
 ### Workflow Agents
 ```javascript

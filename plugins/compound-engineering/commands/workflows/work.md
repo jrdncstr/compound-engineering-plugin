@@ -131,7 +131,7 @@ This command takes a work document (plan, specification, or todo file) and execu
    **Commit workflow:**
    ```bash
    # 1. Verify tests pass (use project's test command)
-   # Examples: bin/rails test, npm test, pytest, go test, etc.
+   # Examples: npm test, pytest, go test, etc.
 
    # 2. Stage only files related to this logical unit (not `git add .`)
    git add <files related to this logical unit>
@@ -160,16 +160,7 @@ This command takes a work document (plan, specification, or todo file) and execu
    - Add new tests for new functionality
    - **Unit tests with mocks prove logic in isolation. Integration tests with real objects prove the layers work together.** If your change touches callbacks, middleware, or error handling — you need both.
 
-5. **Figma Design Sync** (if applicable)
-
-   For UI work with Figma designs:
-
-   - Implement components following design specs
-   - Use figma-design-sync agent iteratively to compare
-   - Fix visual differences identified
-   - Repeat until implementation matches design
-
-6. **Track Progress**
+5. **Track Progress**
    - Keep TodoWrite updated as you complete tasks
    - Note any blockers or unexpected discoveries
    - Create new tasks if scope expands
@@ -183,7 +174,7 @@ This command takes a work document (plan, specification, or todo file) and execu
 
    ```bash
    # Run full test suite (use project's test command)
-   # Examples: bin/rails test, npm test, pytest, go test, etc.
+   # Examples: npm test, pytest, go test, etc.
 
    # Run linting (per CLAUDE.md)
    # Use linting-agent before pushing to origin
