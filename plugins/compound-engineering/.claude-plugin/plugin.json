@@ -15,19 +15,10 @@
     "compound-engineering",
     "workflow-automation",
     "code-review",
-    "rails",
-    "ruby",
-    "python",
     "typescript",
     "knowledge-management",
     "image-generation",
     "agent-browser",
     "browser-automation"
-  ],
-  "mcpServers": {
-    "context7": {
-      "type": "http",
-      "url": "https://mcp.context7.com/mcp"
-    }
-  }
+  ]
 }

@@ -6,16 +6,16 @@ AI-powered development tools that get smarter with every use. Make each unit of 
 
 | Component | Count |
 |-----------|-------|
-| Agents | 29 |
+| Agents | 21 |
 | Commands | 22 |
-| Skills | 19 |
+| Skills | 16 |
 | MCP Servers | 1 |
 
 ## Agents
 
 Agents are organized into categories for easier discovery.
 
-### Review (15)
+### Review (10)
 
 | Agent | Description |
 |-------|-------------|
@@ -25,14 +25,9 @@ Agents are organized into categories for easier discovery.
 | `data-integrity-guardian` | Database migrations and data integrity |
 | `data-migration-expert` | Validate ID mappings match production, check for swapped values |
 | `deployment-verification-agent` | Create Go/No-Go deployment checklists for risky data changes |
-| `dhh-rails-reviewer` | Rails review from DHH's perspective |
-| `julik-frontend-races-reviewer` | Review JavaScript/Stimulus code for race conditions |
-| `kieran-rails-reviewer` | Rails code review with strict conventions |
-| `kieran-python-reviewer` | Python code review with strict conventions |
 | `kieran-typescript-reviewer` | TypeScript code review with strict conventions |
 | `pattern-recognition-specialist` | Analyze code for patterns and anti-patterns |
 | `performance-oracle` | Performance analysis and optimization |
-| `schema-drift-detector` | Detect unrelated schema.rb changes in PRs |
 | `security-sentinel` | Security audits and vulnerability assessments |
 
 ### Research (5)
@@ -45,29 +40,21 @@ Agents are organized into categories for easier discovery.
 | `learnings-researcher` | Search institutional learnings for relevant past solutions |
 | `repo-research-analyst` | Research repository structure and conventions |
 
-### Design (3)
+### Design (2)
 
 | Agent | Description |
 |-------|-------------|
 | `design-implementation-reviewer` | Verify UI implementations match Figma designs |
 | `design-iterator` | Iteratively refine UI through systematic design iterations |
-| `figma-design-sync` | Synchronize web implementations with Figma designs |
 
-### Workflow (5)
+### Workflow (4)
 
 | Agent | Description |
 |-------|-------------|
 | `bug-reproduction-validator` | Systematically reproduce and validate bug reports |
 | `every-style-editor` | Edit content to conform to Every's style guide |
-| `lint` | Run linting and code quality checks on Ruby and ERB files |
 | `pr-comment-resolver` | Address PR comments and implement fixes |
 | `spec-flow-analyzer` | Analyze user flows and identify gaps in specifications |
-
-### Docs (1)
-
-| Agent | Description |
-|-------|-------------|
-| `ankane-readme-writer` | Create READMEs following Ankane-style template for Ruby gems |
 
 ## Commands
 
@@ -94,12 +81,12 @@ Core workflow commands use `workflows:` prefix to avoid collisions with built-in
 | `/create-agent-skill` | Create or edit Claude Code skills |
 | `/generate_command` | Generate new slash commands |
 | `/heal-skill` | Fix skill documentation issues |
-| `/sync` | Sync Claude Code config across machines |
 | `/report-bug` | Report a bug in the plugin |
 | `/reproduce-bug` | Reproduce bugs using logs and console |
 | `/resolve_parallel` | Resolve TODO comments in parallel |
-| `/resolve_pr_parallel` | Resolve PR comments in parallel |
 | `/resolve_todo_parallel` | Resolve todos in parallel |
+| `/agent-native-audit` | Run comprehensive agent-native architecture review with scored principles |
+| `/deploy-docs` | Validate and prepare documentation for GitHub Pages deployment |
 | `/triage` | Triage and prioritize issues |
 | `/test-browser` | Run browser tests on PR-affected pages |
 | `/xcode-test` | Build and test iOS apps on simulator |
@@ -117,11 +104,8 @@ Core workflow commands use `workflows:` prefix to avoid collisions with built-in
 
 | Skill | Description |
 |-------|-------------|
-| `andrew-kane-gem-writer` | Write Ruby gems following Andrew Kane's patterns |
 | `compound-docs` | Capture solved problems as categorized documentation |
 | `create-agent-skills` | Expert guidance for creating Claude Code skills |
-| `dhh-rails-style` | Write Ruby/Rails code in DHH's 37signals style |
-| `dspy-ruby` | Build type-safe LLM applications with DSPy.rb |
 | `frontend-design` | Create production-grade frontend interfaces |
 | `skill-creator` | Guide for creating effective Claude Code skills |
 
