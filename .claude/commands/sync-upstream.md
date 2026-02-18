@@ -91,4 +91,24 @@ Amend the last commit with count fixes if needed.
 git push origin main --force-with-lease
 ```
 
-Report the result: how many upstream commits were incorporated and whether any conflicts were resolved.
+## Step 7: Update Local Plugin Installation
+
+Read the version from `plugins/compound-engineering/.claude-plugin/plugin.json` and update the local plugin cache:
+
+1. Copy the plugin to the cache at the new version:
+
+```bash
+VERSION=$(jq -r .version plugins/compound-engineering/.claude-plugin/plugin.json)
+CACHE_DIR="$HOME/.claude/plugins/cache/every-marketplace/compound-engineering/$VERSION"
+mkdir -p "$CACHE_DIR"
+cp -R plugins/compound-engineering/* "$CACHE_DIR/"
+cp -R plugins/compound-engineering/.claude-plugin "$CACHE_DIR/"
+```
+
+2. Update `~/.claude/plugins/installed_plugins.json`:
+   - Set `installPath` to the new cache directory
+   - Set `version` to the new version
+   - Set `lastUpdated` to the current ISO timestamp
+   - Set `gitCommitSha` to the current `HEAD` commit
+
+3. Report the result: how many upstream commits were incorporated, whether any conflicts were resolved, and the plugin version update (old → new). Remind the user to restart Claude Code to pick up the changes.
